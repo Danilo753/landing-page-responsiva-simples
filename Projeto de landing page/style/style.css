@@ -1,0 +1,109 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: black; /* muda a cor de fundo do body */ 
+  color: white; /* muda a cor do texto */
+  font-family: 'Courier New', Courier, monospace; /* A fonte do site */ 
+  max-width: 1200px; /* largura da pagina ficara a mesma caso ela seja afastada */
+  margin: 0 auto; /* vai deixar o site no meio caso ele seja afastado*/ 
+  padding: 15px; /* cria toda uma margem em volta do conteúdo */ 
+}
+
+header{
+  display: flex; /* metodo de estilização e mais simples de posicionar os elementos */
+  flex-direction: row; /* vai deixar o header em linha reta */
+  justify-content: space-between;/* vai criar um espaço entre os elementos */
+  align-items: center; /* centraliza os itens */
+}
+#title {
+  flex-direction: column;
+  line-height: 10px; /* aproxima os itens dentro de uma div de baixo para cima */
+}
+
+li {
+  display: inline-block; /* deixa itens em forma de linha */
+  margin-left: 20px;
+}
+
+li a {
+  text-decoration: none; /* tira a linha de baixo do texto */
+  color: white;
+  font-weight: 800;
+}
+
+a:hover{ /* faz transição de cor ao passar o mouse */ 
+  color: blueviolet;
+  transition: 0.7s all; /* a transição de cor acontece de forma mais suave */ 
+}
+
+#inscreva-se-btn{
+  border: 2px solid blueviolet;
+  padding: 10px;
+  border-radius: 15px; /* deixa as laterais aredondadas */ 
+}
+
+#inscreva-se-btn:hover{
+  color: white;
+  background-color: blueviolet;
+  
+}
+
+h1 {
+  font-weight: 300;/* deixa a fonte mais fina */
+}
+
+main {
+  display: flex; 
+  flex-direction: row;
+  margin-top: 50px; /* criar margin para cima */
+}
+
+h2 {
+  font-size: 56px; /* tamanho da fonte */ 
+  line-height: 40px;
+}
+
+#h2-color
+{
+  color: blueviolet;
+}
+
+p{
+  line-height: 20px;
+  max-width: 500px; /* largura maxima  */ 
+}
+
+img {
+  width: 580px; /* largura da imagem */ 
+
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+#submit{
+  height: 50px; /* altura */
+  width: 50%; /* tamanho do item */
+  color: rgb(255, 255, 255);
+  background-color: blueviolet;
+  font-weight: bold; /* intensidade da fonte */
+  align-items: center;
+}
+
+#submit:hover{
+  cursor: pointer;
+}
+
+input{
+  margin-top: 20px;
+  height: 20px;
+  padding: 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 15px;
+}
+
